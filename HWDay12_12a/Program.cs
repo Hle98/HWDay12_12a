@@ -10,13 +10,11 @@ namespace HWDay12_12a
             var ls = new List<string> { "A", "B", "C", "D" };
             GroupAssignments(ls,3);
         }
-
         static void GroupAssignments(List<string> ls,int k)
         {
             var groups = new List<List<string>>();
             GroupAssignments(ls, 0, groups,k);
         }
-
         static void GroupAssignments(List<string> ls, int idx, List<List<string>> groups,int k)
         {
             if (ls.Count == idx && groups.Count == k)
